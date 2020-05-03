@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 import Questions from './quiz/question';
+import ShowAnswers from './quiz/showAnswers';
 
 class App extends Component {
-  
+
   render() {  
     return (
+      <div>
+      <ShowAnswers/>
+      
       <Questions theQuestions = {this.state.questions} />
+      
+      </div>
     )
   }
 
